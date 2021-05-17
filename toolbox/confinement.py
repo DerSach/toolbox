@@ -9,4 +9,5 @@ def confinement(address):
     m = folium.Map(coordinates,zoom_start=10)
     folium.Marker(coordinates).add_to(m)
     folium.Circle(radius=10000,location=coordinates).add_to(m)
+    print('Opening a Folium map...')
     return m
